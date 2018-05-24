@@ -109,8 +109,8 @@ def getMovieList(filename):
     contents = open(filename,'rb')  
     movies_info = {}  
     for movie in contents:  
-        single_info = movie.split("|")  
-        movies_info[int(single_info[0])] = single_info[1:]  
+    	single_info = movie.split("|".encode(encoding = 'utf-8'))  
+    	movies_info[int(single_info[0])] = single_info[1:]  
     return movies_info  
   
 #从这里开始运行      
