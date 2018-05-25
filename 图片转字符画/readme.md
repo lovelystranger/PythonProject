@@ -1,2 +1,2 @@
-使用命令行运行py文件  
+浣跨敤鍛戒护琛岃繍琛宲y鏂囦欢
 python picture2char.py dora.png
