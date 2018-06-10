@@ -7,12 +7,12 @@ text_input = tk.Entry(root,textvariable = var)
 text_input.pack()
 
 def print_content():
-	print(var.get())
+	text_output['text'] = var.get()
 	var.set('')
 
 tk.Button(root,text = 'print',command = print_content).pack()
 root.bind('<Return>',lambda event:print_content())
 
-text_output = tk.Message(root,text = 'Show')
+text_output = tk.Message(root,text = '')
 text_output.pack()
 root.mainloop()
