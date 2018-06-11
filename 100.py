@@ -1,7 +1,7 @@
 import tkinter as tk
 
 root =  tk.Tk()
-tk.Label(root,text = "I love 王春梅！").pack()
+tk.Label(root,text = "I love Python！").pack()
 var = tk.StringVar(value = "Hi,what's up")
 text_input = tk.Entry(root,textvariable = var)
 text_input.pack()
